@@ -18,7 +18,7 @@ my_gmail_email = os.environ.get("GMAIL_EMAIL")
 my_gmail_password = os.environ.get("GMAIL_PASSWORD")
 
 my_outlook_email = os.environ.get("OUTLOOK_EMAIL")
-my_outlook_password = os.eviron.get("OUTLOOK_PASSWORD")
+my_outlook_password = os.environ.get("OUTLOOK_PASSWORD")
 
 today = dt.datetime.now()
 
