@@ -34,4 +34,4 @@ if not today_birthday == []:
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(user=my_gmail_email, password=my_gmail_password)
-        connection.sendmail(from_addr=my_gmail_email, to_addrs=my_outlook_email, msg=f"Subject:Birthday!\n\n{letter_content}")
+        connection.sendmail(from_addr=my_gmail_email, to_addrs="bcesar.test@outlook.com", msg=f"Subject:Birthday!\n\n{letter_content}")
