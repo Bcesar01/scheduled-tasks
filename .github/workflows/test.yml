@@ -23,8 +23,8 @@ jobs:
 
       - name: Check secrets are configured
         env:
-          MY_EMAIL: ${{ secrets.GMAIL_EMAIL }}
-          MY_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+          GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
         run: |
           if [ -z "$GMAIL_EMAIL" ]; then
             echo "GMAIL_EMAIL secret is not set!"
