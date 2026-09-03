@@ -12,12 +12,13 @@ import random
 import pandas
 import datetime as dt
 import smtplib
+import os
 
-my_gmail_email = "bcesar.test@gmail.com"
-my_gmail_password = "ltbw oozi dhdj dram"
+my_gmail_email = os.environ.get("my_gmail_email")
+my_gmail_password = os.environ.get("my_gmail_password")
 
-my_outlook_email = "bcesar.test@outlook.com"
-my_outlook_password = "g39xERLxiVcXrV"
+my_outlook_email = os.environ.get("my_outlook_email")
+my_outlook_password = os.eviron.get("my_outlook_password")
 
 today = dt.datetime.now()
 
