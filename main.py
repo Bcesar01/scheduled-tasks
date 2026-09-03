@@ -14,11 +14,11 @@ import datetime as dt
 import smtplib
 import os
 
-my_gmail_email = os.environ.get("my_gmail_email")
-my_gmail_password = os.environ.get("my_gmail_password")
+my_gmail_email = os.environ.get("GMAIL_EMAIL")
+my_gmail_password = os.environ.get("GMAIL_PASSWORD")
 
-my_outlook_email = os.environ.get("my_outlook_email")
-my_outlook_password = os.eviron.get("my_outlook_password")
+my_outlook_email = os.environ.get("OUTLOOK_EMAIL")
+my_outlook_password = os.eviron.get("OUTLOOK_PASSWORD")
 
 today = dt.datetime.now()
 
